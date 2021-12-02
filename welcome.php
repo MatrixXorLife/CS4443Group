@@ -34,7 +34,7 @@ Welcome <?php echo $_GET["oName"]; ?>. Please start entry.<br>
 </center>
 <script>
     function changeCheck() {
-        document.getElementById("check").src="check3.jpg";
+        document.getElementById("check").src="check2.jpg";
         document.getElementById("amount").value="";
     }
 </script>
