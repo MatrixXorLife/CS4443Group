@@ -1,6 +1,6 @@
 
 <?php
-$reciever=$_POST["reciever"];
+$reciever=$_POST["receiver"];
    
    $checkAmount=$_POST["checkAmount"];
    
@@ -8,11 +8,11 @@ $reciever=$_POST["reciever"];
    
    OR die('could not connect to mysql: '.mysqli_error($db)); 
    
-   $db->query("insert into checkdatatable(reciever, checkAmount) values('$reciever','$checkAmount')");
+   $db->query("insert into checkdatatable(receiver, checkAmount) values('$receiver','$checkAmount')");
    ?>
    <html>
       <form action="welcome.php">
          <input type="submit" value="Next check">
 </form>
 </html>
-<script>window.location.href = 'welcome.php'</script>
+<script>window.history.go(-1)</script>

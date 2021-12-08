@@ -90,7 +90,7 @@ Welcome. Please start entry.
 
     for(var i = 0; i < imgArray.length;i++)
     {
-        if(imgArray[i].src == img.src) // << check this
+        if(imgArray[i].src == img.src) 
         {
             if(i === imgArray.length){
                 document.getElementById(element).src = imgArray[0].src;

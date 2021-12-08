@@ -29,12 +29,12 @@ input {
       $query = "SELECT * FROM checkdatatable";
       echo '<table border="0" cellspacing="2" cellpadding="2"> 
       <tr> 
-          <th> <font face="Arial">Reciever</font> </th> 
+          <th> <font face="Arial">Receiver</font> </th> 
           <th> <font face="Arial">Check Amount</font> </th> 
       </tr>';
       if ($result = $db->query($query)) {
          while ($row = $result->fetch_assoc()) {
-            $field1name = $row["reciever"];
+            $field1name = $row["receiver"];
             $field2name = $row["checkAmount"];
             echo '<tr> 
             <td>'.$field1name.'</td> 
